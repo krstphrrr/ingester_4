@@ -1,0 +1,16 @@
+debug.py
+debug2.py
+debug*.py
+help.py
+
+pseudocode.py
+
+**/__init__.cpython-38.py
+**/__pycache__
+**/*.mdb
+**/*.ldb
+**/*.accdb
+**/*.ini
+**/*.csv
+**/*.xlsx
+**/extracted_*
