@@ -14,7 +14,7 @@ services:
       - ./debug3.py:/usr/src/debug3.py
       # - ./src/utils/database_functions.py:/usr/src/src/utils/database_functions.py
       # new development binds
-      - ./index.py:/src/src/index.py
+      - ./index.py:/usr/src/index.py
       - ./src/utils/new_export.py:/usr/src/src/utils/new_export.py
       - ./src/utils/export.sh:/usr/src/src/utils/export.sh
       - ./src/utils/local_batch_utilities.py:/usr/src/src/utils/local_batch_utilities.py

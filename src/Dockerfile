@@ -14,10 +14,34 @@ RUN apk update && \
     libpq-dev \
     g++ \
     build-base \ 
-    mdbtools \
+    # mdbtools deps
+    git \
+    libtool \
+    automake \
+    autoconf \
+    glib \
+    glib-dev \
+    unixodbc \ 
+    unixodbc-dev \
+    gawk \
+    flex \
+    bison \ 
+    nano \
     bash && \ 
     pip3 install psycopg2 && \
     pip3 install --upgrade pip
+
+# build mdbtools from source
+WORKDIR /usr 
+RUN git clone https://github.com/mdbtools/mdbtools.git 
+RUN cd mdbtools && \
+    autoreconf -i -f && \ 
+    ./configure --with-unixodbc=/usr/local && \
+    make && \
+    make install
+
+RUN export PATH="/usr/mdbtools/src/util":$PATH
+
 
 # prepare environment
 WORKDIR /usr/src

@@ -5,7 +5,7 @@ from os import chdir, getcwd, listdir
 from os.path import abspath, join, normpath, splitext, basename
 from configparser import ConfigParser
 from psycopg2.pool import SimpleConnectionPool
-import jaydebeapi
+# import jaydebeapi
 import platform
 # import pyodbc
 import platform
