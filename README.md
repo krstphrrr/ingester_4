@@ -3,7 +3,7 @@
 ### TODO:
 - [x] alpine configuration
 - [x] basic table class
-- [ ] mdb-table instead of pyodbc table list 
+- [x] mdb-table instead of pyodbc table list 
 - [ ] single table function with switch case for each
 - [ ] directory management function
 
