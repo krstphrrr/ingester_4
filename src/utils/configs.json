@@ -2,6 +2,10 @@
   "bsne": ["tblDustDeposition", "tblHorizontalFlux","tblLines","tblPlots", "tblSoilPitHorizons", "tblSoilPits"],
   "soil": ["tblSoilPits", "tblSoilPitHorizons"],
   "joinkeys":{
-    "tblLines":"PlotKey"
+    "tblDKDetail":"RecKey",
+    "tblDKHeader":"LineKey",
+    "tblLines":"PlotKey",
+    "tblGapDetail":"RecKey",
+    "tblGapHeader":"LineKey"
   }
 }
